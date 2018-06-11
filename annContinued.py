@@ -12,9 +12,6 @@ dataset = pd.read_csv('Churn_Modelling.csv')
 x = dataset.iloc[:, 3:13].values   #independent variable matrix
 y = dataset.iloc[:, 13].values  #class variable vector
 
-#print(x)
-
-
 
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 labelencoder_X_1 = LabelEncoder()
